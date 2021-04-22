@@ -1,0 +1,23 @@
+{{#partial "title" }}
+    Create your Model Squad!
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+    <h1>fill in the choices below to create your own squad</h1>
+
+    <form action="/squadDetails" >
+        <div class="form-group">
+            <label for="motive">Squad Motive</label>
+            <input id="motive" name="motive" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="squadMagnitude">Squad Magnitude</label>
+            <input id="squadMagnitude" name="squadMagnitude" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Go!</button>
+    </form>
+    <!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}

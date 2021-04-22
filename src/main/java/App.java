@@ -6,7 +6,16 @@ import static spark.Spark.*;
 
 public class App {
 
+    static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+    }
+
     public static void main(String[] args) {
+        port(getHerokuAssignedPort());
         staticFileLocation("/public");
 
         get("/", (request, response) -> { //request for route happens at this location
@@ -31,6 +40,20 @@ public class App {
             model.put("superpower", superpower);
             model.put("heroAge", heroAge);
             return new ModelAndView(model, "heroesDetails.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/squadform", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "squadform.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/squadDetails", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            String motive = request.queryParams("motive");
+            String squadMagnitude = request.queryParams("squadMagnitude");
+            model.put("motive", motive);
+            model.put("squadMagnitude", squadMagnitude);
+            return new ModelAndView(model, "squadDetails.hbs");
         }, new HandlebarsTemplateEngine());
 
     }

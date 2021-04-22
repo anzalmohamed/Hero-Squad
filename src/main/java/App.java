@@ -18,5 +18,20 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/form", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "form.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/heroesDetails", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            String superpower = request.queryParams("superpower");
+            String heroAge = request.queryParams("heroAge");
+            model.put("superpower", superpower);
+            model.put("heroAge", heroAge);
+            return new ModelAndView(model, "heroesDetails.hbs");
+        }, new HandlebarsTemplateEngine());
+
     }
 }

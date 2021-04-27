@@ -4,18 +4,19 @@
 
 <!--form.hbs.-->
 {{#partial "content"}}
-    <h4 class="h4 text-center text-warning"><strong>Fill in the choices below to create your own squad</strong></h4>
+    <div class="bg-image" style="background-image: url('/images/photo2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <h4 class="h4 text-center text-white"><strong>Fill in the choices below to create your own squad</strong></h4>
 
     <form action="/squadDetails" >
         <div class="form-group ">
-            <label for="motive">Squad Motive</label>
+            <label for="motive" class="label text-white"><strong>Squad Motive</strong></label>
             <input id="motive" name="motive" class="form-control" type="text">
         </div>
         <div class="form-group">
-            <label for="squadMagnitude">Squad Magnitude</label>
+            <label for="squadMagnitude" class="label text-white">Squad Magnitude</label>
             <input id="squadMagnitude" name="squadMagnitude" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn">Add Squad!</button>
+        <button type="submit"  class="btn btn-danger">Add Squad!</button>
     </form>
     <!--form.hbs.--><br>
     <button><a href='/' >Go Back</a></button> </div>

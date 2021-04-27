@@ -1,0 +1,18 @@
+{{#partial "title" }}
+    Your Hero
+{{/partial}}
+
+
+{{#partial "content"}}
+
+    <h1 class="h1 mb-3 text-center"> Your Hero</h1>
+<div class="row"><div class="col-md-9">
+    <p><strong>Superpower: </strong><br class="br mt-3"><li>{{ superpower }}</li> </p>
+</div>
+    <div class="col-md-3">
+        <p><strong>Age: </strong><br class="br mt-3"> <li>{{ heroAge }} </li> </p>
+</div> </div>
+    <br><button><a href='/' >Go Back</a></button>
+{{/partial}}
+
+{{> layout.hbs}}

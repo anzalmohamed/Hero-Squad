@@ -1,0 +1,26 @@
+
+{{#partial "title" }}
+    Create your Model Hero!
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+    <div class="bg-image" style="background-image: url('/images/photo3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <h4 class="h4 text-center text-warning"><strong>Fill in the choices below to create a hero of your own </strong></h4>
+
+ <form action="/heroesDetails" >
+        <div class="form-group">
+            <label for="superpower" class="label text-white"><strong>Hero's Power</strong></label>
+            <input id="superpower" name="superpower" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="heroAge"class="label text-white"><strong>Hero's Age</strong></label>
+            <input id="heroAge" name="heroAge" class="form-control" type="text">
+        </div>
+        <button type="submit"  class="btn btn-danger">Add Hero!</button>
+    </form>
+    <!--form.hbs.--><br>
+ <button><a href='/' >Go Back</a></button> </div>
+{{/partial}}
+
+{{> layout.hbs}}

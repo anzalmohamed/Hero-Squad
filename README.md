@@ -11,14 +11,14 @@
 
 ### Description and Usage
 
-
+The app Hero Squad is used to create and customize the user's desired Hero and Squad
 
 ### Setup Installation Requirement
 To access this project, you will need to access the repository [hero-squad](https://github.com/anzalmohamed/hero-squad) from github then clone it. Then run 'java App' on your terminal.
 
 ### Technologies Used
 * [Java](https://sdkman.io/usage)
-
+* [Handlebars](https://handlebarsjs.com/)
 ### Bugs or Malfunctions
 
 

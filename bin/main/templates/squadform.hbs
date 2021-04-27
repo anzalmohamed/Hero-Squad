@@ -4,10 +4,10 @@
 
 <!--form.hbs.-->
 {{#partial "content"}}
-    <h4 class="h4 text-center text-warning"><strong>Fill in the choices below to create your own squad</strong></h4>
+    <h1>fill in the choices below to create your own squad</h1>
 
     <form action="/squadDetails" >
-        <div class="form-group ">
+        <div class="form-group">
             <label for="motive">Squad Motive</label>
             <input id="motive" name="motive" class="form-control" type="text">
         </div>
@@ -15,10 +15,9 @@
             <label for="squadMagnitude">Squad Magnitude</label>
             <input id="squadMagnitude" name="squadMagnitude" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn">Add Squad!</button>
+        <button type="submit" class="btn">Go!</button>
     </form>
-    <!--form.hbs.--><br>
-    <button><a href='/' >Go Back</a></button> </div>
+    <!--form.hbs.-->
 {{/partial}}
 
 {{> layout.hbs}}

@@ -38,7 +38,7 @@
 
 <!--form.hbs.-->
 {{#partial "content"}}
-    <h4 class="h4 text-center text-warning"><strong>Fill in the choices below to create a hero of your own </strong></h4>
+ <h1>fill in the choices below to create a hero of your own</h1>
 
  <form action="/heroesDetails" >
         <div class="form-group">
@@ -49,10 +49,9 @@
             <label for="heroAge">Hero's Age</label>
             <input id="heroAge" name="heroAge" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn">Add Hero!</button>
+        <button type="submit" class="btn">Go!</button>
     </form>
-    <!--form.hbs.--><br>
- <button><a href='/' >Go Back</a></button> </div>
+    <!--form.hbs.-->
 {{/partial}}
 
 {{> layout.hbs}}

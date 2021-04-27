@@ -1,57 +1,26 @@
 
-<!--{{#partial "title" }}-->
-<!--    Create your Model Hero!-->
-<!--{{/partial}}-->
-
-<!--&lt;!&ndash;form.hbs.&ndash;&gt;-->
-<!--{{#partial "content"}}-->
-
-<!--    <form action="/heroDetails" >-->
-<!--        <div class="form-group">-->
-<!--            <label class="heroName"  for="name">Hero's Name</label>-->
-<!--            <input id="name" name="name" class="form-control" type="text">-->
-<!--        </div>-->
-
-<!--        <div class="form-group">-->
-<!--            <label class="active text-white"  for="age">Hero's Age</label>-->
-<!--            <input id="age" name="heroAge" class="form-control " type="number">-->
-<!--        </div>-->
-
-<!--        <div class="form-group">-->
-<!--            <label class="active text-white"  for="power">Hero's Power</label>-->
-<!--            <input id="superpower" name="superpower" class="form-control" type="text">-->
-<!--        </div>-->
-
-<!--        <div class="form-group">-->
-<!--            <label class="active text-white"  for="weakness">Hero's Weakness</label>-->
-<!--            <input id="weakness" name="weakness" class="form-control" type="text">-->
-<!--        </div>-->
-
-
-<!--        <button type="submit" class="btn">Add hero</button>-->
-<!--    </form>-->
-<!--    &lt;!&ndash;form.hbs.&ndash;&gt;-->
-<!--{{/partial}}-->
 {{#partial "title" }}
     Create your Model Hero!
 {{/partial}}
 
 <!--form.hbs.-->
 {{#partial "content"}}
- <h1>fill in the choices below to create a hero of your own</h1>
+    <div class="bg-image" style="background-image: url('/images/photo3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <h4 class="h4 text-center text-warning"><strong>Fill in the choices below to create a hero of your own </strong></h4>
 
  <form action="/heroesDetails" >
         <div class="form-group">
-            <label for="superpower">Hero's Power</label>
+            <label for="superpower" class="label text-white"><strong>Hero's Power</strong></label>
             <input id="superpower" name="superpower" class="form-control" type="text">
         </div>
         <div class="form-group">
-            <label for="heroAge">Hero's Age</label>
+            <label for="heroAge"class="label text-white"><strong>Hero's Age</strong></label>
             <input id="heroAge" name="heroAge" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn">Go!</button>
+        <button type="submit"  class="btn btn-danger">Add Hero!</button>
     </form>
-    <!--form.hbs.-->
+    <!--form.hbs.--><br>
+ <button><a href='/' >Go Back</a></button> </div>
 {{/partial}}
 
 {{> layout.hbs}}

@@ -5,12 +5,14 @@
 
 {{#partial "content"}}
 
-    <h1>Your Hero</h1>
-
-    <p>hero's superpower: {{ superpower }}</p>
-
-    <p>hero's age:  {{ heroAge }}</p>
-
+    <h1 class="h1 mb-3 text-center"> Your Hero</h1>
+<div class="row"><div class="col-md-9">
+    <p><strong>Superpower: </strong><br class="br mt-3"><li>{{ superpower }}</li> </p>
+</div>
+    <div class="col-md-3">
+        <p><strong>Age: </strong><br class="br mt-3"> <li>{{ heroAge }} </li> </p>
+</div> </div>
+    <br><button><a href='/' >Go Back</a></button>
 {{/partial}}
 
 {{> layout.hbs}}

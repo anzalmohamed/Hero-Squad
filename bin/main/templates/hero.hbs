@@ -4,15 +4,22 @@
     <head>
         <title>Heroes!</title>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+
+
     </head>
     <body>
     <!--It's useful to put a comment at the top of your hbs file to help you keep track of what is what when things get more complex.-->
-    <h1>Heroes Squad</h1>
-    <p>create your own hero and customize their superpowers to your liking</p>
-
+    <h1 class="h1 text-center"><strong>Heroes Squad</strong></h1>
+    <h4 class="p1 text-danger text-center  mb-5 "> <strong>create your own hero and customize their superpowers to your liking</strong></h4>
+<br>
 <!--    <p><a href='/squad_photos' >P.S. Check out my favorite heroes.</a></p>-->
-    <p><a href='/form' >Create your own hero</a></p>
-    <p><a href='/squadform' >Customize your squad.</a></p>
+    <div class="row mt-5">
+        <div class="col-md-9  mt-3">
+   <button><a href='/form' >Create your own hero</a></button> </div>
+        <div class="col-md-3 mt-3">
+    <button><a href='/squadform' >Customize your squad.</a></button>
+    </div>
+    </div>
     </body>
     </html>
 {{/partial}}

@@ -1,0 +1,30 @@
+{{#partial "title" }}
+    Your hero and squad
+{{/partial}}
+
+
+{{#partial "content"}}
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <p><strong>Hero's superpower : </strong><br class="br mt-3"> <li>{{ superpower }} </li>  </p>
+        </div>
+        <div class="col-md-4">
+            <p> <strong>Hero's Age: </strong><br class="br mt-3">  <li>{{ heroAge }} </li> </p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <p><strong>Squad motive : </strong><br class="br mt-3"> <li>{{ motive }} </li>  </p>
+        </div>
+        <div class="col-md-4">
+            <p> <strong>squad magnitude: </strong><br class="br mt-3">  <li>{{ squadMagnitude }} </li> </p>
+        </div>
+
+    </div>
+    <br><button><a href='/' >Go Back</a></button>
+{{/partial}}
+
+{{> layout.hbs}}
